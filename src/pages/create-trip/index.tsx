@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { FormEvent, useState } from 'react';
 
-export function App() {
+export function CreateTripPage() {
   const [isGuestsInputOpen, setIsGuestsInputOpen] = useState(false);
   const [isGuestsModalOpen, setIsGuestsModalOpen] = useState(false);
   const [isConfirmTripMTripModalOpen, setIsConfirmTripMTripModalOpen] =
