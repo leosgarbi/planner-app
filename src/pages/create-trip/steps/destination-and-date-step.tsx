@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 import { ArrowRight, Calendar, MapPin, Settings2, X } from 'lucide-react';
 import { useState } from 'react';
 import { DateRange, DayPicker } from 'react-day-picker';
@@ -77,8 +78,10 @@ export function DestinationAnsDateStep({
             </div>
             <DayPicker
               mode='range'
+              locale={ptBR}
               selected={eventStartAndEndDates}
               onSelect={setEventStartAndEndDates}
+              disabled={{ before: new Date() }}
             />
           </div>
         </div>
